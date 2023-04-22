@@ -80,7 +80,15 @@ btns.forEach((el) => {
       }
       if (el.dataset.calc == "equal") {
         let res = screen.textContent;
-        screen.textContent = eval(res);
+        console.log(res)
+        if(eval(res) == "Infinity"){
+          screen.textContent = "∞"
+          setTimeout(()=>{
+            screen.textContent = "0"
+          },1500)
+        }else{
+          screen.textContent = eval(res);
+        }
         if (screen.textContent.length > 15) {
             screen.parentElement.classList.add("mini");
         } else {
