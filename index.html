@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/Normlize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Calculator app</title>
+  </head>
+  <body class="theme1">
+    <main class="theme1">
+      <div class="top">
+        <h3>calc</h3>
+        <div class="themes">
+          <p>THEME</p>
+          <div class="toggle">
+            <div class="nums">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="handler"></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <p>0</p>
+      </div>
+      <div class="ctrl">
+        <button data-calc="7">7</button>
+        <button data-calc="8">8</button>
+        <button data-calc="9">9</button>
+        <button class="blue del" data-calc="del">DEL</button>
+        <button data-calc="4">4</button>
+        <button data-calc="5">5</button>
+        <button data-calc="6">6</button>
+        <button class="op" data-calc="+">+</button>
+        <button data-calc="1">1</button>
+        <button data-calc="2">2</button>
+        <button data-calc="3">3</button>
+        <button class="op" data-calc="-">-</button>
+        <button class="op" data-calc=".">.</button>
+        <button data-calc="0">0</button>
+        <button class="op" data-calc="/">/</button>
+        <button class="op" data-calc="*">x</button>
+        <button class="ctrl__bottom reset blue" data-calc="reset">RESET</button>
+        <button class="ctrl__bottom eq red" data-calc="equal">=</button>
+      </div>
+    </main>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
